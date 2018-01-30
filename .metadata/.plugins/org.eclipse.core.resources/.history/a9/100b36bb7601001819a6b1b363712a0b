@@ -1,0 +1,8 @@
+Feature: Check OrangeHRM Login and Logout
+
+	Scenario: OrangeHRM Login
+		Given The Browser Invoked and Navigated to OrangeHRM
+		When Tester Enter Username, Password
+		And Tester Login button
+		Then Home page displyed with welcome admin link
+	

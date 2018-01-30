@@ -1,0 +1,17 @@
+package pom;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Test;
+
+import day10.webdriverwaitEg;
+
+public class LoginTEstCase 
+{
+	@Test
+	public void login()
+	{
+		WebDriver driver=new FirefoxDriver();
+	}
+
+}

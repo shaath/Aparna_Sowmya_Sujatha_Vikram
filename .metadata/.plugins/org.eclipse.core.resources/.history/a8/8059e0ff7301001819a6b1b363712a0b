@@ -1,0 +1,29 @@
+package pom;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.server.browserlaunchers.Sleeper;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Test;
+
+public class LoginTEstCase 
+{
+	@Test
+	public void login()
+	{
+		WebDriver driver=new FirefoxDriver();
+		
+		LoginPge lp=PageFactory.initElements(driver, LoginPge.class);
+		driver.get(lp.url);
+		
+		lp.login(lp.u, lp.p);
+		
+		Homepage p=PageFactory.initElements(driver, Homepage.class);
+		
+		Sleeper.sleepTightInSeconds(3);
+		
+		p.welcomeclick();
+		p.logoutclick();
+	}
+
+}

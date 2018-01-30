@@ -1,0 +1,16 @@
+package driverscripts;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+public class Keyword {
+
+	public static void main(String[] args) throws FileNotFoundException
+	{
+		String xlpath="F:\\Aprna Recordings\\WorkSpace\\SeleniumProject\\src\\testdata\\Keyword.xlsx";
+		FileInputStream fi=new FileInputStream(xlpath);
+		
+
+	}
+
+}
